@@ -1,9 +1,9 @@
 #include <Arete.hpp>
 
-Arete::Arete(std::string sa, std::string sb,int poid){
+Arete::Arete(std::string sa, std::string sb,int p){
     a=new Sommet(sa);
     b=new Sommet(sb);
-    poid=poid;
+    poid=p;
 }
 Arete::Arete(Sommet* sa,Sommet *sb,int p){
     a=sa;

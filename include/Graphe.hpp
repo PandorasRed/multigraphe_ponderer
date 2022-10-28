@@ -7,10 +7,13 @@
 #include <Sommet.hpp>
 #include <unordered_set>
 #include <vector>
+#include <algorithm>
+#include <functional>
 class Graphe{
     private:
     std::vector<Sommet*> sommets;
     std::vector<Arete*> aretes;
+    bool sym;
     public:
     Graphe(const Graphe &g);
     Graphe(std::vector<Sommet*> s, std::vector<Arete*> a);
@@ -20,8 +23,9 @@ class Graphe{
     Arete* ajoute_arete(std::string a,std::string b, int poids);
     Arete* ajoute_arete(Sommet* a, Sommet* b, int poid);
     int poids();
-    void symetrise();
+    std::vector<Arete*> symetrise();
     friend std::ostream& operator<<(std::ostream& out, Graphe &b);
+    std::vector<Arete*> kruskal();
 
     
 };

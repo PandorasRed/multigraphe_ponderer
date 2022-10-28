@@ -2,3 +2,5 @@
 /TP5
 /brouillon classe
 /main
+*.o
+src/*.o

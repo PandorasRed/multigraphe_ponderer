@@ -11,6 +11,8 @@ class Sommet{
     Sommet(std::string st);
     Sommet(const Sommet &s);
     std::string get();
+    void set(int a);
+    friend class Graphe;
 };
 std::ostream& operator<<(std::ostream& out, Sommet &b);
 
