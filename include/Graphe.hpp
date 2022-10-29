@@ -26,6 +26,7 @@ class Graphe{
     std::vector<Arete*> symetrise();
     friend std::ostream& operator<<(std::ostream& out, Graphe &b);
     std::vector<Arete*> kruskal();
+    friend class GC;
 
     
 };

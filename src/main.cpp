@@ -1,6 +1,20 @@
 #include <main.hpp>
+void f1(){
+    std::cout<<"Demonstrateur pour un graphe contenant des Aretes et Sommet créer de différente manière\n";
+    Sommet* SA=new Sommet("SommetA");
+    Sommet* SB=new Sommet("SommetB");
+    Arete* AA=new Arete(SA,SB,10);
+    Arete* AB=new Arete("SommetC","SommetD",20);
+    
+}
+void f2(){
 
+}
+void f3(){
+    
+}
 int main(){
+    
     Sommet* a=new Sommet("bloup");
     auto b=new Sommet("test");
     auto f=new Sommet("test2");
@@ -27,8 +41,6 @@ int main(){
         collector.add_arete(tmpa);
     }
 
-    collector.add_sommet(a);
-    collector.add_arete(c); 
-    collector.add_arete(e);
-    collector.add_arete(d);
+    collector.add_graphe(test);
 }
+

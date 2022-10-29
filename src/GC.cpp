@@ -38,4 +38,9 @@ void GC::add_sommet(Sommet* s){
             sommets.push_back(s);
     }
 }
+void GC::add_graphe(Graphe &a){
+    for (auto ar : a.aretes){
+        add_arete(ar);
+    }
+}
 
